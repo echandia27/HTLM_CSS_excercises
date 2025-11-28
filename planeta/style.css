@@ -1,0 +1,5 @@
+.Dinosaurios img {
+    width: 300px;   /* ancho de la imagen */
+    height: auto;   /* mantiene la proporción */
+    border-radius: 10px; /* opcional */
+}
