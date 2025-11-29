@@ -3,3 +3,11 @@
     height: auto;   /* mantiene la proporción */
     border-radius: 10px; /* opcional */
 }
+
+ul.dino-links {
+    list-style: none; /* quita los puntos */
+    padding: 0;
+    margin: 0;
+    display: flex; /* hace que los <li> esten en fila */
+    gap: 20px; /* espacio entre links */
+}
