@@ -41,6 +41,35 @@ h3 {
     color: #000000;
 }
 
+/* Título secundario (H2) */
+h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 60px;
+    color: #6d4d2c;  /* tono tierra */
+    font-family: 'Bangers', cursive; /* estilo más salvaje */
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.15);
+}
+
+/* Contenedor del párrafo introductorio */
+.intro-text {
+    max-width: 900px;
+    margin: 25px auto 40px;
+    padding: 25px 30px;
+
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: #3a2a15;
+    text-align: justify;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
     
 
 /* Tarjeta que contiene imagen + texto */
@@ -87,6 +116,8 @@ body {
     background-image: url("./imagenes/istockphoto-1325942344-612x612.jpg"); /* textura */
     background-size: cover;
     background-repeat: no-repeat;
+    margin-left: 230px; /* Ajustado al nuevo tamaño */
+    /* Para que el contenido principal no se superponga con la barra la ultima linea*/
 }
 
 /* Patrón encima con opacidad controlada */
@@ -116,30 +147,7 @@ body::before {
     border-radius: 10px;
 }
 
-ul.dino-links {
-    list-style: none;
-    padding: 0;
-    margin: 20px auto;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    font-size: 25px;
-    
-}
 
-ul.dino-links li a {
-    text-decoration: none;
-    background-color: #8b2a0c;
-    color: bisque;
-    padding: 5px 10px;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: 0.5s;
-}
-
-ul.dino-links li a:hover {
-    background-color: #91a00e;
-}
 
 .dino-card {
     background-color: #8b2a0c;
@@ -156,3 +164,78 @@ hr {
     background: linear-gradient(to right, #6b4a2b, #3b2a18, #6b4a2b);
     border-radius: 4px;
 }
+
+/* ====== SIDEBAR IZQUIERDA FIJA ====== */
+/* ====== SIDEBAR DE HUESOS ====== */
+.sidebar {
+    position: fixed; /* hace que la barra quede fja aunque se haga scroll */
+    top: 0; /*Indica que la barra debe pegarse al borde superior. */
+    left: 0; /*Indica que la barra debe pegarse al borde izquierdo de la pantalla. */
+    width: 230px; /*Define que la barra lateral tendrá un ancho fijo de 230 px.*/
+    height: 100vh; /*La altura será de 100% del alto visible de la pantalla, es decir: de arriba a abajo siempre.*/
+
+    background: #8b2a0c; 
+    border-right: 6px solid #bda78b; /*Un borde vertical del lado derecho, simulando un marco de hueso o piedra.*/
+    box-shadow: 4px 0 15px rgba(0,0,0,0.3); /*Una sombra hacia el lado derecho que da sensación de profundidad, como si la barra sobresaliera.*/
+
+    /*Espacio interno para separar el contenido del borde.*/
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-image: url('https://i.imgur.com/FbWlCEZ.png'); /* textura hueso */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    z-index: 999; /*Garantiza que la barra siempre quede por encima de todo lo demás de la página.*/
+}
+
+/* -------- H3 dentro de la barra -------- */
+.sidebar h3 {
+    color: #d2c3ac;
+    font-family: "Papyrus", serif; /* estilo rústico */
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 5px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #5241ee;
+}
+
+/* -------- Lista -------- */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 18px 0;
+    text-align: center;
+}
+
+/* -------- Botones estilo hueso -------- */
+.sidebar a {
+    display: block;
+    color: #3b2a1d;
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 12px;
+    margin: 0 10px;
+
+    background: #f7efe0;
+    border: 3px solid #d2c3ac;
+    border-radius: 12px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #e0d1b8;
+    transform: scale(1.06);
+    border-color: #bca98a;
+}
+
