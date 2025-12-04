@@ -8,26 +8,26 @@
     }
     
 header {
-    position: relative;              /* necesario para el overlay */
+    position: relative;              /* Hace que el <header> sea el contenedor base para posicionar elementos absolutos dentro, como el overlay ::after.Sin esto, el overlay se desalinearía. */
     height: 130px;
     background-image: url("./imagenes/night-city-aesthetic-pz9wox70ww0iex1l.jpg"); /* tu imagen */
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /*La imagen cubre todo el header sin deformarse. Si sobra, recorta.*/
+    background-position: center; /*Centra la imagen, útil cuando está recortada.*/
     color: aliceblue;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*Organiza su contenido en columnas:.header-topnav*/
     gap: 20px;
     padding: 20px;
 }
 
 
 header::after {
-    content: "";
-    position: absolute;
+    content: ""; /*Necesario para que el pseudo-elemento exista.*/
+    position: absolute; /*Lo posiciona exactamente encima del header.*/
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100%; /*Cubre todo el header.*/
+    height: 100%; /*Cubre todo el header.*/
     background-color: rgba(0,0,0,0.8); 
     z-index: 0; /* MUY IMPORTANTE: debajo del contenido */
 }
@@ -35,8 +35,8 @@ header::after {
 
 .header-top,
 nav {
-    position: relative;
-    z-index: 1; /* MUY importante */
+    position: relative; /*Necesario para que z-index funcione.*/
+    z-index: 1; /*Esto pone el contenido por encima del overlay negro, que tiene z-index: 0.Sin estas dos líneas, tu contenido quedaría invisible detrás de la sombra negra.*/
 }
 
 
