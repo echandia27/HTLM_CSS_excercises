@@ -78,8 +78,9 @@ h2 {
     align-items: center;
     gap: 20px;
     padding: 20px;
-    margin: 20px auto;
+    margin: 20px auto; /*Crea un margen exterior de 20px arriba y abajo, y centrado horizontalmente gracias al auto en derecha/izquierda.*/
     max-width: 900px;
+    
 
     background: rgba(187, 183, 161, 0.7); /* fondo para legibilidad */
     border-radius: 15px;
