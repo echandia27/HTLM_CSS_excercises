@@ -67,19 +67,22 @@ header nav a:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
-    margin: 50px;
+    margin: 80px;
     border: 2px solid rgb(248, 182, 0);
+    background-color:rgb(15, 110, 119);
+    padding: 40px 20px; /*le da margen*/
     
-
-
 }
 
 .seccion1 nav {
-    grid-column: 1/ 2;
-    grid-row: 1/ 2;
-    padding: 30px;
+    
+    grid-column: 2/ 3;
+    grid-row: 2/ 3;
+    padding: 5px;
     color: white;
-    text-align: center;
+    display: grid;
+    place-items: center;
+    
 }
 
 .seccion1 .imagen1 {
@@ -91,19 +94,24 @@ header nav a:hover {
     grid-row: 3/ 4;
 }
 .seccion1 .imagen3 {
-    grid-column: 2/ 3;
-    grid-row: 2/ 3;
+    grid-column: 1/ 2;
+    grid-row: 1/ 2;
+    
 }
 
 .seccion1 img {
-
+    
     width: 400px;
     height: 300px;
-    margin: 20px;
+    margin: 0 auto;
     border-radius: 20px;
-    
-    align-items: center;
 }
+
+.seccion1 h2 {
+    font-size: 2rem;
+    
+}
+
 body {
     background-color:  rgb(13, 71, 77);
 }
