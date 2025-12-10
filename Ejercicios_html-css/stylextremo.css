@@ -18,7 +18,7 @@
 header img {
     width: 180px;
     height: auto;
-   
+    max-width: 100%;
     position: static;
     z-index: 1;  
 }
@@ -105,6 +105,23 @@ header nav a:hover {
     height: 300px;
     margin: 0 auto;
     border-radius: 20px;
+    max-width: 100%;
+
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Móvil */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .seccion1 h2 {
@@ -125,4 +142,33 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 50px;
+}
+
+article {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgb(248, 182, 0);
+    background-color: rgb(15, 110, 119);
+    color: white;
+    border-radius: 10px;
+}
+
+ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: white
+}
+h4 {
+    color: white;
+    margin-left: 20px;
+    font-family: Arial, sans-serif;
+    padding: 1%;
+}
+
+.lista {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgb(248, 182, 0);
+    background-color: rgb(15, 110, 119);
+    border-radius: 10px;
 }

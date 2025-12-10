@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #0f1310; /* oscuro uniforme para que header y carrusel resalten */
+    color: #ffffff;       /* texto claro */
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+
+header {
+    background: linear-gradient(to right, #131213, #ec07ec);
+    padding: 20px;
+    color: rgb(67, 233, 216);
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif; /* Fuente futurista de Google Fonts */
+    text-shadow: 0 0 10px #43e9d8, 0 0 20px #ec07ec;
+}
+@media (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.carrusel {
+    overflow: hidden; /* Oculta los artículos que no se ven */
+    width: 80%; /* Ancho del carrusel */
+    max-width: 100%; /* Máximo ancho del carrusel */
+    margin: 40px auto; /* Centra el carrusel */;
+    padding: 20px; /* Espaciado interno */
+    border: 2px solid #43e9d8;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #0f1310, #555255); /* Fondo futurista */
+    box-shadow: 0 0 20px #ec07ec; /* Sombra neón */
+    color: white;
+}
+
+.carrusel-track {
+    display: flex;
+    width: 300%; /* 3 artículos */
+    animation: mover 12s infinite;
+}
+
+section.carrusel {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.carrusel article {
+    width: 100%; /* Cada artículo ocupa el 100% del carrusel */
+    flex-shrink: 0; /* Evita que los artículos se reduzcan */
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@keyframes mover {
+    0%, 25% { transform: translateX(0%); }
+    33%, 58% { transform: translateX(-100%); }
+    66%, 91% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+.carrusel article img {
+    width: 600px; /* Ancho completo del artículo */
+    height: 400px; /* Altura fija para el carrusel */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    border-radius: 10px;
+    box-shadow: 0 0 15px #43e9d8; /* Sombra neón */
+}
+
+@media (max-width: 900px) {
+    .carrusel-track {
+        width: 200%; /* solo 2 artículos visibles */
+    }
+    .carrusel article {
+        width: 50%;
+    }
+    @keyframes mover {
+        0%, 50%   { transform: translateX(0%); }
+        100%      { transform: translateX(-50%); }
+    }
+}
+
