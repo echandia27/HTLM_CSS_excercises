@@ -4,3 +4,116 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(./imagenes_universo/photo-1677029907981-e9a44fb7409a.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+h1 {
+    color: white;
+    margin: 40px;
+    
+}
+
+label {
+    color: white;
+}
+
+fieldset {
+    background-color: rgba(165, 42, 42, 0.562);
+    width: 20%;
+    padding: 10px;
+    margin: 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+legend { 
+color: white;
+font-weight: bold;
+text-shadow: 0 0 15px rgb(255, 0, 0);
+}
+
+.horario {
+    color: white;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(165, 42, 42, 0.562);
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 2px solid;
+    margin: 60px auto;
+    
+}
+
+.ingreso {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    margin: 40px;
+    background-color:  rgba(165, 42, 42, 0.445);
+    padding: 10px;
+    width: 25%;
+    box-shadow: 0 0 25px  rgba(165, 42, 42, 0.562);
+    border-radius: 20px;
+    border:1px dotted black;
+
+}
+
+.ingreso label {
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+
+.acepto {
+    margin: 50px;
+}
+
+button {
+    display: block;
+    background-color: #790808;    
+    color: white;                
+    padding: 12px 25px;            /* espacio interno */
+    border: none;                  
+    border-radius: 8px;            
+    font-size: 16px;              
+    cursor: pointer;               /* cambia el cursor al pasar */
+    transition: background-color 0.3s, transform 0.2s; /* transición suave */
+    margin: 0 auto;
+    box-shadow: 0 4px 25px rgba(4, 176, 228, 0.432);
+    border: 1px solid black;
+}
+
+button:hover {
+    box-shadow: 0 0px 8px rgba(219, 243, 5, 0.884);
+    color: rgb(97, 175, 7);
+}
+
+.horario {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 40px;
+}
+
+@media (max-width: 900px) {
+    .ingreso {
+        width: 70%;
+    }
+}

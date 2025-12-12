@@ -12,41 +12,44 @@
     <h1>Formulario de Registro - Liga Intergaláctica 🚀</h1>
 
     <form action="#" method="post">
-        <!--nombre-->
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <br><br>
 
-        <!--Especie-->
-        <label for="especie">Especie:</label>
-        <input type="text" id="especie" name="especie" required>
-        <br><br>
+        <section class="formulario">
+            <!--nombre-->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
 
-        <!--sistema planetario-->
-        <label for="sistema">Sistema planetario:</label>
-        <input type="text" id="sistema" name="sistema" required>
-        <br><br>
+            <!--Especie-->
+            <label for="especie">Especie:</label>
+            <input type="text" id="especie" name="especie" required>
+            <br>
 
-        <!--correo intergalatico-->
-        <label for="correo">Correo intergalactico:</label>
-        <input type="email" id="correo" name="correo" placeholder="alienigena@universo6.com" required>
-        <br><br>
+            <!--sistema planetario-->
+            <label for="sistema">Sistema planetario:</label>
+            <input type="text" id="sistema" name="sistema" required>
+            <br>
 
-        <!--nivel de poder-->
-        <label for="nivel">Nivel de poder:</label>
-        <input type="number" id="nivel" name="nivel" min="0" max="10000000" required>
-        <br><br>
+            <!--correo intergalatico-->
+            <label for="correo">Correo intergalactico:</label>
+            <input type="email" id="correo" name="correo" placeholder="alienigena@universo6.com" required>
+            <br>
 
-        <!--escoger mision-->
-        <label for="mision">Tipo de mision que solicitara:</label>
-        <select name="mision" id="mision" required>
-            <option value="">--Seleccione misión--</option>
-            <option value="exploracion">Exploración de Territorios Desconocidos</option>
-            <option value="asesinato">Asesinato de Pollos Ninjas</option>
-            <option value="rescate">Rescate de mancos</option>
-            <option value="recoleccion">Recolección de Calcetines Sucios</option>
-        </select>
-        <br><br>
+            <!--nivel de poder-->
+            <label for="nivel">Nivel de poder:</label>
+            <input type="number" id="nivel" name="nivel" min="0" max="10000000" required>
+            <br>
+
+            <!--escoger mision-->
+            <label for="mision">Tipo de mision que solicitara:</label>
+            <select name="mision" id="mision" required>
+                <option value="">--Seleccione misión--</option>
+                <option value="exploracion">Exploración de Territorios Desconocidos</option>
+                <option value="asesinato">Asesinato de Pollos Ninjas</option>
+                <option value="rescate">Rescate de mancos</option>
+                <option value="recoleccion">Recolección de Calcetines Sucios</option>
+            </select>
+            <br><br>
+        </section>
 
         <!--habilidades de los chicos especiales-->
         <fieldset>
@@ -78,26 +81,29 @@
             </label><br>
         </fieldset>
 
-        <!--motivo de ingreso-->
-        <label for="motivo">Motivo por el que ingresa:</label><br>
-        <textarea name="motivo" id="motivo" rows="5" cols="40" placeholder="Explicanos por que quieres ingresar" required></textarea>
-        <br><br>
+        <nav class="ingreso">
+            <!--motivo de ingreso-->
+            <label for="motivo">Motivo por el que ingresa:</label><br>
+            <textarea name="motivo" id="motivo" rows="5" cols="40" placeholder="Explicanos por que quieres ingresar" required></textarea>
+            <br>
+        </nav>
 
         <!--aceptacion-->
-        <label>
-            <input type="checkbox" name="acepta" required>
-            Acepto las normas requeridas para ser un miembro del la liga Intergalactica   
-        </label>
-        <br><br>
+        <nav class="acepto">
+            <label>
+                <input type="checkbox" name="acepta" required>
+                Acepto las normas requeridas para ser un miembro del la liga Intergalactica   
+            </label>
+            <br>
+        </nav>
 
         <!--boton-->
         <button type="submit">Enviar Solicitud</button>
-
-
+        
 
     </form>
 
-    <section>
+    <section class="horario">
         <h2>Horarios del Centro de Reclutamiento</h2>
         <p>Lunes a Viernes: 09:00 - 18:00</p>
         <p>Sábado: 10:00 - 14:00</p>
