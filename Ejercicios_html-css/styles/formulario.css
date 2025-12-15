@@ -2,5 +2,125 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
 }
 
+body {
+    background-image: url("../imagenes-formulario/f0d1d1f2-3bad-4492-969a-f31e6049c427.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-card {
+    background: #0d38c4;
+    padding: 35px 30px;
+    border-radius: 15px;
+    width: 360px;
+    box-shadow: 0 0 30px rgba(0, 102, 255, 0.8);
+    color: white;
+    text-align: center;
+}
+.login-card h2 {
+    font-size: 1.9rem;
+    margin-bottom: 5px;
+}
+
+/* radios oculos */
+input[type="radio"] {
+    display: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.div {
+    display: flex;
+}
+
+.register-form {
+    display: none;
+}
+
+#register:checked~.login-card form div {
+    display: none;
+}
+
+#register:checked~.login-card form .register-form {
+    display: flex;
+}
+
+.form label {
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+.form input {
+    padding: 11px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+}
+
+.form input:focus {
+    outline: none;
+    border-color: #2c5364;
+}
+
+.form button {
+    
+    padding: 0;
+    border-radius: 10px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form button:hover {
+    color: #ccc;
+}
+
+.toogle-text {
+    margin-top: 18px;
+    font-size: 0.85rem;
+    
+}
+
+.toogle-text label {
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+.toogle-text span {
+    color: white;
+    font-weight: bold;
+}
+
+#login:checked~.login-card .toogle-text label[for="register"] {
+    display: block;
+}
+
+#register:checked~.login-card .toogle-text label[for="login"] {
+    display: block;
+}

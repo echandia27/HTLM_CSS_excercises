@@ -7,11 +7,56 @@
     <link rel="stylesheet" href="styles/formulario.css">
 </head>
 <body>
-    <section>
-        <h1>Login</h1>
-        <label for="correo">Email</label><br>
-        <input type="email" name="correo" id="correo" required>
-    </section>
+
+<div class="login-container">
+
+    <input type="radio" name="tab" id="login" checked>
+    <input type="radio" name="tab" id="register">
+
+    <div class="login-card">
+        <h2 class="titulo">Login</h2>
+        
+
+        <form action="#" method="post">
+            <div class="form div">
+                <label for="loguear-email">Email</label><br>
+                <input type="email" name="correo" id="loguear-email" required><br>
+
+                <label for="pasword">Password</label><br>
+                <input type="password" name="password" id="pasword" required><br><br>
+            
+                <button type="submit">Enviar</button>
+            </div>
+
+            <!--registro-->
+            <div class="form register-form">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" required>
+
+                <label for="regitrar-email">Email</label>
+                <input type="text" id="regitrar-email" required>
+
+                <label for="registrar-password">Password</label>
+                <input type="password" id="registrar-password" required>
+
+                <label for="confirmar-password">Confirmar password</label>
+                <input type="password" id="confirmar-password" required>
+
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        
+        <div class="toogle-text">
+            <label for="register">
+                <span>Crear cuenta</span>
+            </label>
+            <label for="login">
+                <span>volver</span>
+            </label>
+        </div>
+    </div>
+</div>
+        
     
 </body>
 </html>
