@@ -4,11 +4,28 @@
     box-sizing: border-box;
 }
 
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .search-box {
   position: relative;
   width: 250px;
 }
 
+.crud {
+  height: 25px;
+}
+
+header p {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+
+.aheader {
+  color: white;
+}
 .search-box input {
   width: 100%;
   padding: 10px 15px 10px 40px; /* espacio a la izquierda */
@@ -41,10 +58,77 @@
 }
 
 .nav {
-    display: flex;
+  display: flex;
+  padding: 20px;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.imagenes1 {
+  height: 20px;
+  display: flex;
+
+
 }
 
 .primersecction {
-    background-image: url("../imaganes_copia/Rectangle\ 2.png");
-    height: 600px;
+  background-image: url("../imaganes_copia/Rectangle\ 2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.primerdiv {
+  display: flex;
+  gap: 50px;
+  
+}
+
+.logos {
+  background-color: black;
+  margin-top: auto;
+  padding:25px;
+  display: flex;
+  justify-content: space-evenly; /* reparte los items en un espacio equitativo*/
+
+}
+
+.primersecction button {
+  align-self: flex-start; /*controla el tamaño del boton*/
+  padding: 6px 30px;
+  border-radius: 20px;
+  
+}
+
+.info-principal {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 20px;
+  
+
+}
+
+.info-principal h2 {
+  font-weight:bold;
+  font-size: 40px;
+}
+
+.articulo2,
+.articulo3 {
+  border-left: 1px solid gray;
+  padding: 20px;
+
+}
+
+.articulo1 {
+  padding: 20px;
 }
