@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search-box {
+  position: relative;
+  width: 250px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 15px 10px 40px; /* espacio a la izquierda */
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+/* círculo */
+.icon {
+  position: absolute;
+  left: 14px; /* ahora a la izquierda */
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #555;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+/* mango */
+.icon::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background: #555;
+  bottom: -5px;
+  right: -6px;
+  transform: rotate(45deg);
+}
+
+.nav {
+    display: flex;
+}
+
+.primersecction {
+    background-image: url("../imaganes_copia/Rectangle\ 2.png");
+    height: 600px;
+}
